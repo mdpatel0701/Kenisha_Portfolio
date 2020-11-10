@@ -16,6 +16,12 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -24,9 +30,11 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
+ 
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <script src="assets/js/script.js" defer></script>
   <!-- =======================================================
   * Template Name: MyResume - v2.1.0
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -340,25 +348,311 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p> MODIFY THIS: (1) Coursework in a list format;
+          <!-- <p> MODIFY THIS: (1) Coursework in a list format;
             (2) On-going Projects with pictures; (3) Internships I'd like to do </p>
-            <p>Tabs should be starting on the right: (1) All; (2) Coursework; (3) Projects</p>
+            <p>Tabs should be starting on the right: (1) All; (2) Coursework; (3) Projects</p> -->
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <!-- <li data-filter="*" class="filter-active">All</li> -->
+              <li data-filter=".filter-app" data-tab-target="#coursework">Coursework</li>
+              <li data-filter=".filter-card" data-tab-target="#projects">Projects</li>
+              <li data-filter=".filter-web" data-tab-target="#interests">Interests</li>
             </ul>
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200"> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-12">
+              <div id="coursework" class="active" data-tab-content>
+                    
+                <!-- <div class="page"> -->
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="timeline">
+                      <div class="timeline__group">
+                        <span class="timeline__year time" aria-hidden="true">MAT101</span>
+                        <div class="timeline__cards">
+                          <div class="timeline__card card">
+                            <header class="card__header">
+                              <time class="time" datetime="2008-02-02">
+                                <span class="time__day"></span>
+                                <span class="time__month">Linear Algebra</span>
+                              </time>
+                            </header>
+                            <div class="card__content">
+                              <p>Attends the Philadelphia Museum School of Industrial Art. Studies design with Alexey Brodovitch, art director at Harper's Bazaar, and works as his assistant.</p>
+                            </div>
+                          </div>
+                          <div class="timeline__card card">
+                            <header class="card__header">
+                              <time class="time" datetime="2008-09-01">
+                                <span class="time__day">Integral</span>
+                                <span class="time__month">Calculus</span>
+                              </time>
+                              <h3 class="card__title r-title">The part of my life in University of Pennsylvania</h3>
+                            </header>
+                            <div class="card__content">
+                              <p>Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience greatly affected me</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="timeline__group">
+                        <span class="timeline__year time" aria-hidden="true">CSC102</span>
+                        <div class="timeline__cards">
+                          <div class="timeline__card card">
+                            <header class="card__header">
+                              <time class="time" datetime="2008-07-14">
+                                <span class="time__day">Digital </span>
+                                <span class="time__month">Logic circuits</span>
+                              </time>
+                            </header>
+                            <div class="card__content">
+                              <p>Travels to France, Italy, Spain, and Peru. After completing fashion editorial in Lima, prolongs stay to make portraits of local people in a daylight studio</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="timeline__group">
+                        <span class="timeline__year time" aria-hidden="true">CSC111</span>
+                        <div class="timeline__cards">
+                          <div class="timeline__card card">
+                            <header class="card__header">
+                              <time class="time" datetime="2008-08-18">
+                                <span class="time__day"></span>
+                                <span class="time__month">Course #</span>
+                              </time>          
+                            </header>
+                            <div class="card__content">
+                              <p>Upon moving to Brooklyn that summer, I began photographing weddings in Chicago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="timeline">
+                      <div class="timeline__group">
+                        <span class="timeline__year time" aria-hidden="true">CSC103</span>
+                        <div class="timeline__cards">
+                          <div class="timeline__card card">
+                            <header class="card__header">
+                              <time class="time" datetime="2008-02-02">
+                                <span class="time__day">Python:</span>
+                                <span class="time__month">Intro to Computing</span>
+                              </time>
+                            </header>
+                            <div class="card__content">
+                              <p>Attends the Philadelphia Museum School of Industrial Art. Studies design with Alexey Brodovitch, art director at Harper's Bazaar, and works as his assistant.</p>
+                            </div>
+                          </div>
+                          <div class="timeline__card card">
+                            <header class="card__header">
+                              <time class="time" datetime="2008-09-01">
+                                <span class="time__day">C++:</span>
+                                <span class="time__month">Intro to programming</span>
+                              </time>
+                              <h3 class="card__title r-title">The part of my life in University of Pennsylvania</h3>
+                            </header>
+                            <div class="card__content">
+                              <p>Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience greatly affected me</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="timeline__group">
+                        <span class="timeline__year time" aria-hidden="true">CSC103</span>
+                        <div class="timeline__cards">
+                          <div class="timeline__card card">
+                            <header class="card__header">
+                              <time class="time" datetime="2008-07-14">
+                                <span class="time__day">Artificial</span>
+                                <span class="time__month">Intelligence</span>
+                              </time>
+                            </header>
+                            <div class="card__content">
+                              <p>Travels to France, Italy, Spain, and Peru. After completing fashion editorial in Lima, prolongs stay to make portraits of local people in a daylight studio</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="timeline__group">
+                        <span class="timeline__year time" aria-hidden="true">CSC104</span>
+                        <div class="timeline__cards">
+                          <div class="timeline__card card">
+                            <header class="card__header">
+                              <time class="time" datetime="2008-08-18">
+                                <span class="time__day">Computer</span>
+                                <span class="time__month">Architecture</span>
+                              </time>          
+                            </header>
+                            <div class="card__content">
+                              <p>Upon moving to Brooklyn that summer, I began photographing weddings in Chicago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 
+                
+                
+                <!-- </div> -->
+                
+              </div>
+
+              <!-- <div id="projects" data-tab-content>
+                <div class="row">
+
+                  <div class="col-lg-4 col-md-6 flip-box d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="assets/img/apple-touch-icon.png" alt="Avatar" style="width:100%">
+                        <h4><b>Jane Doe</b></h4> 
+                        <p>Interior Designer</p>
+                      </div>
+
+                      
+                      <div class="flip-box-back">
+                        <h2>Back Side</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 flip-box d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="assets/img/apple-touch-icon.png" alt="Avatar" style="width:100%">
+                        <h4><b>Mansi sdcs</b></h4> 
+                        <p>web developer</p>
+                      </div>
+
+                      
+                      <div class="flip-box-back">
+                        <h2>Back Side</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 flip-box d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card">
+                      <img src="assets/img/apple-touch-icon.png" alt="Avatar" style="width:100%">
+                      <div class="project-label-container">
+                        <h4><b>Jane Doe</b></h4> 
+                        <p>Interior Designer</p> 
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card">
+                      <img src="assets/img/apple-touch-icon.png" alt="Avatar" style="width:100%">
+                      <div class="project-label-container">
+                        <h4><b>Jane Doe</b></h4> 
+                        <p>Interior Designer</p> 
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-card">
+                      <img src="assets/img/apple-touch-icon.png" alt="Avatar" style="width:100%">
+                      <div class="project-label-container">
+                        <h4><b>Jane Doe</b></h4> 
+                        <p>Interior Designer</p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+
+              
+              <div id="projects" data-tab-content>
+                <div class="row">
+                  <div class="col-md-12 block-13 nav-direction-white">
+                    <div class="nonloop-block-13 owl-carousel">
+                      <div class="media-image">
+                        <img src="assets/img/portfolio/portfolio-2.jpg" alt="Image" class="img-fluid">
+                        <div class="media-image-body">
+                          <h2 class="font-secondary text-uppercase">Project #1  &#169;Mansi</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                          <p><a href="#" class="btn btn-primary text-white px-4">Learn More</a></p>
+                        </div>
+                      </div>
+                      <div class="media-image">
+                        <img src="assets/img/portfolio/portfolio-4.jpg" alt="Image" class="img-fluid">
+                        <div class="media-image-body">
+                          <h2 class="font-secondary text-uppercase">Project #2  &#169;Mansi</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                          <p><a href="#" class="btn btn-primary text-white px-4">Learn More</a></p>
+                        </div>
+                      </div>
+                      <div class="media-image">
+                        <img src="assets/img/portfolio/portfolio-2.jpg" alt="Image" class="img-fluid">
+                        <div class="media-image-body">
+                          <h2 class="font-secondary text-uppercase">Project #3  &#169;Mansi</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                          <p><a href="#" class="btn btn-primary text-white px-4">Learn More</a></p>
+                        </div>
+                      </div>
+                      <div class="media-image">
+                        <img src="assets/img/portfolio/portfolio-4.jpg" alt="Image" class="img-fluid">
+                        <div class="media-image-body">
+                          <h2 class="font-secondary text-uppercase">Project #4  &#169;Mansi</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptate.</p>
+                          <p><a href="#" class="btn btn-primary text-white px-4">Learn More</a></p>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="interests" data-tab-content>
+                <div class="di-flex">
+                  <div class="child-flex">
+                    <p class="interest-card" style="display: flex; align-items: center; justify-content: center;"> Reading </p>
+                  </div>
+
+                  <div class="child-flex">
+                    <p class="interest-card" style="display: flex; align-items: center; justify-content: center;"> Travelling </p>
+                  </div>
+
+                  <div class="child-flex">
+                    <p class="interest-card" style="display: flex; align-items: center; justify-content: center;"> Programming </p>
+                  </div>
+
+                  <div class="child-flex">
+                    <p class="interest-card" style="display: flex; align-items: center; justify-content: center;">Horse Riding </p>
+                  </div>
+
+                  <div class="child-flex">
+                    <p class="interest-card" style="display: flex; align-items: center; justify-content: center;">Singing</p>
+                  </div>
+
+                  <div class="child-flex">
+                    <p class="interest-card" style="display: flex; align-items: center; justify-content: center;"> Playing Sports </p>
+                  </div>
+
+               
+                </div>
+
+                
+              </div>
+          </div>
+           
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -482,7 +776,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -650,6 +944,15 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+
+
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -661,6 +964,9 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+
+ 
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
